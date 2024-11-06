@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args)  {
         Board board=new Board(4);
-        GameService gameService=new GameService(board);
+        GameService gameService=GameService.getGameService(board);
         int[][]gameBoard= board.getGameBoard();
         gameService.start();
         Scanner sc=new Scanner(System.in);

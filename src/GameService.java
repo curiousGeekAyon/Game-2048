@@ -1,10 +1,18 @@
 import java.util.*;
 
 public class GameService {
-    Board board;
-
-    public GameService(Board board) {
-        this.board = board;
+    private static Board board;
+    private static GameService gameService;
+    private GameService(Board board) {
+        GameService.board = board;
+    }
+    public static GameService getGameService(Board board)
+    {
+        if(gameService==null)
+        {
+            gameService=new GameService(board);
+        }
+        return gameService;
     }
     public void left()
     {
