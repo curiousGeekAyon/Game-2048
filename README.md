@@ -38,14 +38,17 @@ Run the game:
 bash
 Copy code
 java src.Main
+
 🛠️ Features
 User-friendly controls: Enter numbers to move tiles in any direction.
 Random tile generation: Adds a 2 (or sometimes 4) tile in a random empty spot after each move.
 Win and lose detection: Automatically ends the game when no moves are possible or the target tile is reached.
+
 📚 Code Structure
 Main.java: Entry point to start the game.
 Board.java: Manages the game board, tile movements, and merging logic.
 GameService.java: Handles game mechanics, checks win/lose conditions, and processes moves.
+
 🔍 Future Enhancements
 Add a graphical user interface (GUI) for a more interactive experience.
 Implement score tracking and high-score saving.
