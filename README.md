@@ -25,6 +25,7 @@ Clone the Repository:
 bash
 Copy code
 git clone https://github.com/curiousGeekAyon/Game-2048.git
+
 cd Game-2048
 Compile and Run the Game:
 
